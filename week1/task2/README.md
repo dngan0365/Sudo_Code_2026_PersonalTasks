@@ -16,7 +16,7 @@ Output: [0,0,1,1,2,3,3,_,_]
 ### 1. Intuition
 We iterate every elements of the list. If the current element appear at most twice, we remove it. This approach is simple but increase time complexity because every time we remove the duplicates, we need to rearrange the remaining element.
 ### 2. Algorithm
-![]()
+![Brute Force Approach](./assets/approach.png)
 ### 3. Time & Space Complexity
 - Time complexity: $O(n^2)$
 - Space complexity: $O(1)$ extra space.
