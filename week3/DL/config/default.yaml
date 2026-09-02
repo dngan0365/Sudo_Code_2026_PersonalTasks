@@ -1,0 +1,29 @@
+data:
+  train_dir: data/Train_Full
+  test_dir: data/Test_Full
+  limit_per_class:
+
+preprocessing:
+  lowercase: true
+  remove_digits: true
+  use_underthesea: false
+
+vocabulary:
+  max_size: 30000
+  min_freq: 2
+
+model:
+  embedding_dim: 128
+  hidden_dim: 128
+  dropout: 0.3
+
+training:
+  batch_size: 64
+  epochs: 5
+  learning_rate: 0.001
+  max_tokens: 500
+  seed: 42
+  device: auto
+
+output:
+  dir: output

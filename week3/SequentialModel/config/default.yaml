@@ -1,0 +1,39 @@
+data:
+  corpus_dir: data/output
+  pattern: "*.txt"
+  max_files: 20
+  max_chars: 1000000
+
+preprocessing:
+  lowercase: false
+  normalize_whitespace: true
+
+vocabulary:
+  min_freq: 1
+
+model:
+  embedding_dim: 128
+  hidden_dim: 256
+  num_layers: 2
+  dropout: 0.2
+
+training:
+  sequence_length: 120
+  batch_size: 64
+  epochs: 5
+  learning_rate: 0.002
+  grad_clip: 5.0
+  seed: 42
+  device: auto
+
+generation:
+  prompts:
+    - "Ngay xua"
+    - "Toi buoc vao"
+    - "Trong thanh pho"
+  length: 300
+  temperature: 0.8
+  top_k: 40
+
+output:
+  dir: output

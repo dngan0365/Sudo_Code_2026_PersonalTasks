@@ -1,3 +1,36 @@
 ./week2/TextProcessing/data/news_dataset.json
 ./week2/TextFeatureExtraction/data/news_dataset.json
 /week2/TextEmbedding/data/**
+
+venv/*
+.venv/
+**/.venv/
+
+# Python runtime files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Generated pipeline outputs
+week2/**/output/
+week2/**/models/
+week3/**/output/
+week3/**/models/
+week4/**/output/
+week4/**/models/
+
+# Local datasets
+week2/**/data/**
+!week2/**/data/.gitkeep
+week3/ML/data/**
+!week3/ML/data/.gitkeep
+week3/DL/data/**
+!week3/DL/data/.gitkeep
+week3/SequentialModel/data/**
+!week3/SequentialModel/data/.gitkeep
+week4/Attention/data/**
+!week4/Attention/data/.gitkeep
+week4/Transformer/data/**
+!week4/Transformer/data/.gitkeep
